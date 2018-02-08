@@ -1,0 +1,50 @@
+@import './var';
+@import 'mixin';
+
+@import './common';
+@import './vant-theme';
+a {
+  color: #000;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  /* 这个属性可以使页面上的字体抗锯齿,使用后字体看起来会更清晰 */
+}
+
+.view-router {
+  background-color: $bg-color;
+  min-height: 100%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+//商品详情页
+.item_desc {
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
